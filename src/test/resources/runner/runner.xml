@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="My suite">
+    <listeners>
+        <listener class-name="com.automation.Listeners.ExtentReportListener"/>
+    </listeners>
+    <test name="Verify Cart">
+        <classes>
+            <class name="com.automation.tests.VerifyCartTest"/>
+        </classes>
+    </test>
+    <test name="Verify  High to Low Price Sort">
+        <classes>
+            <class name="com.automation.tests.VerifySortProductsFromHighToLow"/>
+        </classes>
+    </test>
+</suite>
